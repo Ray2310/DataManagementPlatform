@@ -19,3 +19,14 @@ axios({
   const username = result.data.name
   document.querySelector('.nick-name').innerHTML = username
 })
+
+/**
+ * TODO: 退出登录
+1.绑定点击事件
+2.清空本地缓存，跳转到登录页面
+ */
+document.querySelector('.quit').addEventListener('click' ,()=>{
+  localStorage.clear()
+  location.href= '../login/index.html'
+
+})

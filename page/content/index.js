@@ -151,3 +151,4 @@ document.querySelector('.art-list').addEventListener('click', e => {
     location.href = `../publish/index.html?id=${artId}`
   }
 })
+  
