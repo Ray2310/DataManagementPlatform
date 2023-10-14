@@ -37,5 +37,7 @@ const server = http.createServer(function (request,response){
         }
     })
 })
+//也可以将ip设置为本地ip
+server.address('192.168.1.105')
 server.listen('8080')
-console.log('Server is running at http://127.0.0.1:8080/');
+console.log('Server is running at http://192.168.1.105:8080/');
